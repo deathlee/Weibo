@@ -1,10 +1,12 @@
 __author__ = 'zhuangli'
 class RawData:
-    def __init__(self,uid,mid,time,content,forward_count,comment_count,like_count):
+    def __init__(self,uid,mid,time,content):
         self.uid=uid
         self.mid=mid
         self.time=time
         self.content=content
+class Label:
+    def __init__(self,forward_count,comment_count,like_count):
         self.forward_count=forward_count
         self.comment_count=comment_count
         self.like_count=like_count
